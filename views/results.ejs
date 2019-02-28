@@ -1,0 +1,21 @@
+<% include partials/header %>
+<div class="container">
+<div class="card" >
+    <div class="card-body">
+        <h5 class="card-title">OMDb API</h5>
+        <p class="card-text">List of Movies</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <% data["Search"].forEach(function(movie){ %> 
+        <li class="list-group-item">
+           <strong><%= movie["Title"]%></strong> -
+            <%=movie["Year"] %>
+        </li>
+        <% }) %>
+
+    </ul>
+    <a href="/" class="text-center"><h3>Search again</h3></a>
+</div>
+</div>
+
+<% include partials/footer %>
