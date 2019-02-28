@@ -5,10 +5,12 @@
 #NOTE
 
 * run npm install 
+
 * also create a keys.js file in your root directory.
-* Input your key and save
+
+* Input this line of code into your keys.js file:
 ********************************************
 * module.exports = {
-    OMBd_API_KEY: 'key'
- }
+*    OMBd_API_KEY: 'key'
+* }
 *******************************************
